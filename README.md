@@ -70,7 +70,7 @@ Incorporate actor popularity data, such as the most watched and liked actors for
 
 ## For More Information
 
-See the full analysis in the [Jupyter Notebook](./MS_Movie_Analysis.ipynb) or review this [Presentation](./Microsoft_Movie_Analysis.pdf).
+See the full analysis in the [Jupyter Notebook](./MS_Movies_Analysis .ipynb) or review this [Presentation](./Microsoft_Movie_Analysis.pdf).
 
 
 ## Repository Structure
