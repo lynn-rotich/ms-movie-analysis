@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ![microsoft_image](Images/Microsoft_Logo.jpg)
 
 # Microsoft Movie Analysis
@@ -71,7 +70,7 @@ Incorporate actor popularity data, such as the most watched and liked actors for
 
 ## For More Information
 
-See the full analysis in the [Jupyter Notebook](./MS_Movie_Analysis.ipynb) or review this [Presentation](MicrosoftMovieAnalysis.pdf).
+See the full analysis in the [Jupyter Notebook](./MS_Movies_Analysis .ipynb) or review this [Presentation](./Microsoft_Movie_Analysis.pdf).
 
 
 ## Repository Structure
@@ -87,18 +86,3 @@ See the full analysis in the [Jupyter Notebook](./MS_Movie_Analysis.ipynb) or re
 
 
 
-=======
-# Phase 1 Project Templates and Examples
-
-This repo contains templates and examples to help you get started with your Phase 1 Project. Each of these is in a separate branch as explained below.
-
-- The **template-mvp** branch is the template you should use to for your Phase 1 Project. MVP stands for Minimum Viable Product, but this isn't meant in a negative way - if your project uses this template, it will be functional and accessible.
-
-- The **example-mvp** branch is an example project using the MVP template.
-
-Once you've completed your project using the MVP template, you can improve it using the Above and Beyond (AAB) template if you have time:
-
-- The **template-aab** branch is the AAB template to use to keep improving your project.
-
-- The **example-aab** branch is an example project using the AAB template.
->>>>>>> 648864e7cb06f956e2923ca5f0a9499847deb4e5
