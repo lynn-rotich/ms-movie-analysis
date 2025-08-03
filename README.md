@@ -1,72 +1,88 @@
-# Phase 1 Project Template - Minimum Viable Product (MVP)
+![microsoft_image](Images/Microsoft_Logo.jpg)
 
-![blueprint](images/blueprint.png)
+# Microsoft Movie Analysis
 
-This repository is like a blueprint, providing structure for your first End of Phase Project. We suggest you base your Phase 1 project off of this repository so you can focus less on formatting and organization, and more on the _analysis and communication skills_ that will support your progress through the course. This template is designed to make your project portfolio-ready in order to impress the future employers who will review it. 
+**Author**: Lynn Rotich
 
-## Repository Contents
+## Overview
 
-Below is a list of the contents of this repository - instructions for using them are in the next section.
+Microsoft aims to launch a movie studio producing original, successful movies. To guide this, the project analyzed movie industry data—focusing on genres, release months, runtimes, and audience ratings. Findings show that combination genres like Comedy, Documentary, and Fantasy receive higher ratings; May, June, and July are the most profitable release months; and films 90–120 minutes long enhance viewer satisfaction. Microsoft can focus on these high-performing genres, months, and runtimes to become successful. For deeper insights, analyzing top release platforms and popular actors will support strategic decision-making as they explore the movie industry.
 
-- `README.md`: The README for this repo branch explaining it's contents - you're reading it now
-- `TEMPLATE_README.md`: An example of a project README that provides a brief overview of your whole project
-- `dsc-phase1-project-template.ipynb`: A starter Jupyter Notebook with headings, code examples and guiding questions
-- `DS_Project_Presentation_Template.pdf`: A starter slide deck presenting your project - here is an [editable version](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy)
-- `zippedData` folder: A folder for the data you reference with your code
-- `images` folder: A folder for the images you reference in your files 
-- `.gitignore`: A hidden file that tells git to not track certain files and folders
+## Business Problem
 
-## Instructions For Using This Repository
+Exploring industry data to identify which movie genres generate the highest audience ratings, which months have the most successful movie releases and the optimal movie runtime based on audience ratings to enable Microsoft to strategically position their new movie studio in the market based on the data.
 
-### Fork This Repository
+## Data
 
-**For a group project**, have only one team member do these steps:
+This project uses multiple datasets from various movie industry sources, including The Numbers, IMDb and TheMovieDB (TMDb). These datasets contain information on movies such as runtimes, audience ratings, box office revenues, genres, production budgets, titles and release dates. Each dataset focuses on a different aspect of movie performance.
 
-1. Fork this repository to your personal account
-   - In GitHub, go to this repository and click the "Fork" button in the upper right
-   
-2. Change the name of your fork of this repo to a _descriptive_ name of your choosing
-   - In GitHub, go to your fork of this repo -> "Settings" -> "Options" -> "Repository Name" -> "Rename"
-   - Make the name descriptive, since potential employers will read it. Ex: "Microsoft-Movie-Analysis" is better than "Project-1"
+The data will be cleaned and analyzed to extract actionable insights that will help Microsoft determine the best path for ensuring success of their new movie studio.
 
-3. Use `git clone` to clone your fork of this repo to your local computer
+## Method
 
-4. **For a group project**, add team members as collaborators to your fork of this repo
-   - In GitHub, go to your fork of this repo -> "Settings" -> "Manage Access" -> "Invite Teams or People"
-   - Add your project team members as collaborators & send them the repo GitHub URL
+Methods used to prepare the data for analysis include:
+* Dropping rows with missing values
+* Creating new columns for better analysis
+* Handling outliers in the data
 
-### Work In Your Fork Of This Repository
+## Results
 
-- Work in the repo clone that you created on your local machine
-- Start writing and coding in the Jupyter Notebook `dsc-phase1-project-template.ipynb`
-- Fill in the README template in `TEMPLATE_README.md`
-- Use `git add`, `git commit`, and `git push` often to update your repo in GitHub
-   - For a refresher on how to do this and why it's important, review Topic 2: Bash and Git
+Top Movie Genre is Comedy, Documentary, Fantasy
 
-### Use The Slide Template
+<img width="984" height="584" alt="Top Genres by Average Audience Rating" src="https://github.com/user-attachments/assets/2bb8153a-b826-40d7-b685-bc9e5c629474" />
 
-1. Go to [this link](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy) to make an editable copy of the slide deck in your own Google Drive account
-2. Go to "Slide," select "Change Theme," and pick a theme you like so your presentation doesn't look like everyone else's
-3. **For a group project**, click the "Share" button and add your teammates as editors
 
-### Tidy Up Your Project
 
-- Change the file name of the Jupyter Notebook (`dsc-phase1-project-template.ipynb`) to something more descriptive
-- Save an appropriately-named PDF version of your slide deck to the repository
-- Rename the template readme you've been working in by running `git mv TEMPLATE_README.md README.md`
-- Delete unnecessary files from the repo using `git rm`
-   - The presentation PDF: `DS_Project_Presentation_Template.pdf`
-   - Any unused data files in the `zippedData` folder
-   - Any unused images in the `images` folder
-- Utilize the .gitignore file to ignore large unzipped data files in the `zippedData` folder
-   - Add `*.csv`,`*.tsv`, and `*.db` to the .gitignore file
+Best months to release movies is in May, June and July based on the Worldwide gross
 
-### Submit Your Project
+<img width="784" height="484" alt="Top 5 Release Months by Worldwide Gross" src="https://github.com/user-attachments/assets/0c7fcae6-426a-47e4-b57a-e716f6c78274" />
 
-To submit your project, please follow the instructions in the "Project Submission & Review" page in the Milestones course.
 
-***
-### Notes
 
-- The visualizations in the notebook use best practices for visualization that you should try to emulate. For example, they have clear axes, descriptive titles, and appropriate number formatting
-- The `dsc-phase1-project-template.ipynb` is intended to be the _final version_ of your project. The first notebook you create will not look like this. You are encouraged to start with a very disorderly notebook and clean it as you go
+Optimal movie runtimes is between 90-120 minutes based on Average Audience Ratings
+
+<img width="984" height="584" alt="Best Movie Runtimes Based on Audience Ratings" src="https://github.com/user-attachments/assets/11aa0076-5619-44b7-a195-fb15a86d080a" />
+
+
+## Conclusions
+
+Based on the analysis, the following recommendations are proposed:
+
+1.Focus on High-Performing Genres
+
+As a new movie studio, Microsoft should prioritize genres that receive higher audience ratings. These include combination genres such as Comedy-documentary-fantasy and Documentary-musical-family. Unique genres like Game-show also appear to pique audience interest. Starting with the top three performing genres would increase the likelihood of early success.
+
+2. Releasing Movies during High-performing Months
+
+Releasing films during peak months—such as May, June and July—can significantly improve revenue. This would help offset the high initial costs Microsoft is likely to incur as a new entrant in the movie industry.
+
+3. Target Optimal Runtime
+
+Producing movies with runtimes between 90-120 minutes is likely to boost audience ratings and overall satisfaction.
+
+### Next Steps
+
+To enhance the depth and accuracy of the analysis in the future, the following steps are recommended:
+
+Expand data sources to include revenue from streaming platforms versus cinema releases. This would help determine the most profitable distribution channels for Microsoft’s movies.
+Incorporate actor popularity data, such as the most watched and liked actors for specific genres. This would enable Microsoft to make informed casting decisions, increasing the potential for success in the industry.
+
+
+## For More Information
+
+See the full analysis in the [Jupyter Notebook](./MS_Movie_Analysis.ipynb) or review this [Presentation](MicrosoftMovieAnalysis.pdf).
+
+
+## Repository Structure
+
+```
+├── Data
+├── Images
+├── MS_Movie_Analysis.ipynb
+├── Microsoft Movie Analysis.pdf
+└── README.md
+```
+
+
+
+
